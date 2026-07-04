@@ -106,17 +106,27 @@ h1, h2, h3, h4 {
   gap: 0.8rem;
 }
 .nav-brand-icon {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   background: var(--red);
-  border-radius: 8px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  padding: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px rgba(212,175,55,0.5);
+}
+.nav-seal .seal-cell {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gold);
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 0.82rem;
+  font-weight: 700;
   font-family: "Noto Serif SC", serif;
+  line-height: 1;
 }
 .nav-brand-text {
   font-family: "Noto Serif SC", serif;
@@ -1844,7 +1854,7 @@ h1, h2, h3, h4 {
 <header class="header" id="header">
   <nav class="nav" aria-label="主导航">
     <a href="#home" class="nav-brand">
-      <div class="nav-brand-icon">和</div>
+      <div class="nav-brand-icon nav-seal"><span class="seal-cell"></span><span class="seal-cell">和</span><span class="seal-cell">堂</span><span class="seal-cell">元</span></div>
       <div>
         <div class="nav-brand-text">和元堂</div>
         <div class="nav-brand-sub">HEYUANTANG</div>
@@ -2362,7 +2372,7 @@ h1, h2, h3, h4 {
         <span>MYCELIUM LIQUID PRODUCT</span>
       </div>
       <div class="factory-photos">
-        <div class="factory-photo wide" onclick="openLightbox('images/factory-21-liquid1.jpg')">
+        <div class="factory-photo" onclick="openLightbox('images/factory-21-liquid1.jpg')">
           <img src="images/factory-21-liquid1.jpg" alt="菌丝液产品" loading="lazy"><div class="factory-label">菌丝液 · 产品展示</div>
         </div>
         <div class="factory-photo" onclick="openLightbox('images/factory-22-liquid2.jpg')">
