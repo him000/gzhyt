@@ -1530,6 +1530,110 @@ h1, h2, h3, h4 {
 }
 .brochure-badge-item span:first-child { font-size: 1.1rem; color: var(--red); }
 
+/* ========== Oral Liquid Introduction Section ========== */
+.oral-liquid {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+.oral-liquid-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+  border: 1px solid rgba(93,64,55,0.06);
+}
+.oral-liquid-hero-img {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.oral-liquid-hero-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+.oral-liquid-hero-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.oral-liquid-hero-text h3 {
+  font-size: 1.6rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+.oral-liquid-hero-text p {
+  font-size: 0.95rem;
+  color: var(--brown-light);
+  line-height: 2;
+  margin-bottom: 0.8rem;
+}
+.oral-liquid-hero-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.oral-liquid-hero-tag {
+  background: rgba(196, 30, 58, 0.06);
+  color: var(--red);
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  border: 1px solid rgba(196, 30, 58, 0.15);
+}
+.oral-liquid-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.oral-liquid-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(93,64,55,0.06);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+.oral-liquid-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  border-color: rgba(212,175,55,0.3);
+}
+.oral-liquid-card-img {
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+.oral-liquid-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.oral-liquid-card:hover .oral-liquid-card-img img {
+  transform: scale(1.05);
+}
+.oral-liquid-card-body {
+  padding: 1rem 1.2rem;
+}
+.oral-liquid-card-body h4 {
+  font-size: 0.95rem;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+}
+.oral-liquid-card-body p {
+  font-size: 0.8rem;
+  color: var(--brown-light);
+  line-height: 1.5;
+}
+
 /* ========== Product Gallery Section ========== */
 .gallery {
   padding: 6rem 0;
@@ -1789,6 +1893,8 @@ h1, h2, h3, h4 {
   .factory-raw-material { grid-template-columns: 1fr; gap: 2rem; }
   .factory-raw-img img { height: 200px; }
   .brochure-showcase { grid-template-columns: 1fr; gap: 2rem; }
+  .oral-liquid-hero { grid-template-columns: 1fr; gap: 2rem; }
+  .oral-liquid-grid { grid-template-columns: repeat(2, 1fr); }
   .process-flow { grid-template-columns: repeat(3, 1fr); row-gap: 2.5rem; }
   .process-flow::before { display: none; }
   .culture-banner { height: 350px; }
@@ -1836,6 +1942,8 @@ h1, h2, h3, h4 {
   .carousel-arrow svg { width: 20px; height: 20px; }
   .factory-photo.wide { grid-column: span 1; }
   .factory-stats { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+  .oral-liquid-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .oral-liquid-hero { padding: 1.5rem; }
   .factory-raw-material { padding: 1.5rem; }
   .factory-raw-tags { gap: 0.5rem; }
   .process-flow { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
@@ -1865,6 +1973,7 @@ h1, h2, h3, h4 {
       <a href="#home" class="active">首页</a>
       <a href="#product">产品中心</a>
       <a href="#gallery">产品图集</a>
+      <a href="#oral-liquid">口服液介绍</a>
       <a href="#process">生产工艺</a>
       <a href="#factory">工厂实力</a>
       <a href="#brand-story">品牌故事</a>
@@ -2144,6 +2253,74 @@ h1, h2, h3, h4 {
   </div>
 </section>
 
+<!-- ========== Product Gallery Section ========== -->
+
+<!-- ========== Oral Liquid Introduction Section ========== -->
+<section class="oral-liquid" id="oral-liquid">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>和元堂口服液介绍</h2>
+      <p>ORAL LIQUID INTRODUCTION</p>
+    </div>
+
+    <div class="oral-liquid-hero fade-in">
+      <div class="oral-liquid-hero-img" onclick="openLightbox('images/oral-liquid-1.jpg')">
+        <img src="images/oral-liquid-1.jpg" alt="和元堂口服液产品宣传图" loading="lazy">
+      </div>
+      <div class="oral-liquid-hero-text">
+        <h3>一药广效<br>自然养生之道</h3>
+        <p>和元堂虫草口服液，以西藏那曲优质冬虫夏草为核心原料，融合灵芝、香菇、山茱萸、玉竹等七味药食两用植物，经现代生物工程常温发酵培殖技术精制而成。</p>
+        <p>六支精装礼盒设计，送礼自用皆宜，是追求健康生活人士的理想养生之选。</p>
+        <div class="oral-liquid-hero-tags">
+          <span class="oral-liquid-hero-tag">冬虫夏草</span>
+          <span class="oral-liquid-hero-tag">增强免疫力</span>
+          <span class="oral-liquid-hero-tag">六支精装</span>
+          <span class="oral-liquid-hero-tag">送礼佳品</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="oral-liquid-grid fade-in">
+      <div class="oral-liquid-card" onclick="openLightbox('images/oral-liquid-2.jpg')">
+        <div class="oral-liquid-card-img">
+          <img src="images/oral-liquid-2.jpg" alt="产品实拍展示" loading="lazy">
+        </div>
+        <div class="oral-liquid-card-body">
+          <h4>产品实拍</h4>
+          <p>六支精装礼盒 · 送礼更佳</p>
+        </div>
+      </div>
+      <div class="oral-liquid-card" onclick="openLightbox('images/oral-liquid-3.jpg')">
+        <div class="oral-liquid-card-img">
+          <img src="images/oral-liquid-3.jpg" alt="冬虫夏草功效说明" loading="lazy">
+        </div>
+        <div class="oral-liquid-card-body">
+          <h4>功效说明</h4>
+          <p>免疫调节 · 抗肿瘤 · 抗疲劳</p>
+        </div>
+      </div>
+      <div class="oral-liquid-card" onclick="openLightbox('images/oral-liquid-4.jpg')">
+        <div class="oral-liquid-card-img">
+          <img src="images/oral-liquid-4.jpg" alt="人体系统保养图解" loading="lazy">
+        </div>
+        <div class="oral-liquid-card-body">
+          <h4>系统保养</h4>
+          <p>人体系统保养的第一良药</p>
+        </div>
+      </div>
+      <div class="oral-liquid-card" onclick="openLightbox('images/oral-liquid-5.jpg')">
+        <div class="oral-liquid-card-img">
+          <img src="images/oral-liquid-5.jpg" alt="产品规格说明" loading="lazy">
+        </div>
+        <div class="oral-liquid-card-body">
+          <h4>产品规格</h4>
+          <p>配料成分 · 批准文号 · 储存方法</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ========== Production Process Section ========== -->
 <section class="process" id="process">
   <div class="container">
@@ -2361,6 +2538,25 @@ h1, h2, h3, h4 {
         </button>
         <div class="carousel-dots">
           <button class="carousel-dot active" onclick="goToEquipPage(0)" aria-label="第1页"></button><button class="carousel-dot" onclick="goToEquipPage(1)" aria-label="第2页"></button><button class="carousel-dot" onclick="goToEquipPage(2)" aria-label="第3页"></button><button class="carousel-dot" onclick="goToEquipPage(3)" aria-label="第4页"></button><button class="carousel-dot" onclick="goToEquipPage(4)" aria-label="第5页"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 更多生产设备 -->
+    <div class="factory-category fade-in">
+      <div class="factory-category-title">
+        <h3>更多生产设备</h3>
+        <span>MORE EQUIPMENT</span>
+      </div>
+      <div class="factory-photos">
+        <div class="factory-photo wide" onclick="openLightbox('images/factory-28-equip1.jpg')">
+          <img src="images/factory-28-equip1.jpg" alt="浓缩罐与高剪切混合设备" loading="lazy"><div class="factory-label">浓缩罐 · 高剪切混合系统</div>
+        </div>
+        <div class="factory-photo" onclick="openLightbox('images/factory-29-equip2.jpg')">
+          <img src="images/factory-29-equip2.jpg" alt="不锈钢反应釜组" loading="lazy"><div class="factory-label">不锈钢反应釜组</div>
+        </div>
+        <div class="factory-photo" onclick="openLightbox('images/factory-30-equip3.jpg')">
+          <img src="images/factory-30-equip3.jpg" alt="发酵罐阵列" loading="lazy"><div class="factory-label">发酵罐阵列</div>
         </div>
       </div>
     </div>
@@ -2723,6 +2919,7 @@ h1, h2, h3, h4 {
         <a href="#home">首页</a>
         <a href="#product">产品中心</a>
         <a href="#gallery">产品图集</a>
+        <a href="#oral-liquid">口服液介绍</a>
         <a href="#process">生产工艺</a>
         <a href="#factory">工厂实力</a>
         <a href="#brand-story">品牌故事</a>
