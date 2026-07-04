@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广州和元堂 - 和元堂牌雅札更布饮液 | 虫草菌丝液保健食品</title>
+<meta name="description" content="广州和元堂生物科技发展有限公司，专注虫草菌丝液保健食品研发。和元堂牌雅札更布饮液，国食健字G20041180，增强免疫力，传承中华养生智慧。">
+<meta name="keywords" content="和元堂,虫草,冬虫夏草,雅札更布,保健食品,增强免疫力,菌丝液">
+<style>
+/* ========== CSS Reset & Base ========== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  color: #5D4037;
+  background: #F5F1E8;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; transition: color 0.3s; }
+ul { list-style: none; }
+
+/* ========== Color Variables ========== */
+:root {
+  --red: #C41E3A;
+  --red-dark: #9B1830;
+  --gold: #D4AF37;
+  --gold-light: #F0E0A0;
+  --brown: #5D4037;
+  --brown-light: #8D6E63;
+  --cream: #F5F1E8;
+  --cream-dark: #EDE7D9;
+  --navy: #1B3A5F;
+  --white: #FFFFFF;
+}
+
+/* ========== Typography ========== */
+h1, h2, h3, h4 {
+  font-family: "Noto Serif SC", "SimSun", "STSong", serif;
+  color: var(--brown);
+  line-height: 1.4;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title h2 {
+  font-size: 2.2rem;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+.section-title h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 0.8rem auto 0;
+  border-radius: 2px;
+}
+.section-title p {
+  font-size: 1rem;
+  color: var(--brown-light);
+  letter-spacing: 2px;
+}
+
+/* ========== Container ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ========== Header / Navigation ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(245, 241, 232, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+.header.scrolled {
+  background: rgba(245, 241, 232, 0.98);
+  box-shadow: 0 2px 30px rgba(0,0,0,0.12);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.nav-brand-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--red);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Noto Serif SC", serif;
+}
+.nav-brand-text {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1.4rem;
+  color: var(--red);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav-brand-sub {
+  font-size: 0.7rem;
+  color: var(--brown-light);
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 0.95rem;
+  color: var(--brown);
+  position: relative;
+  padding: 0.3rem 0;
+  transition: color 0.3s;
+  letter-spacing: 1px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--red);
+}
+.nav-links a:hover::after, .nav-links a.active::after {
+  width: 100%;
+}
+.nav-cta {
+  background: var(--red);
+  color: var(--white) !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 4px;
+  font-size: 0.9rem !important;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover {
+  background: var(--red-dark) !important;
+  color: var(--white) !important;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--brown);
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ========== Hero Section ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a0a0a 0%, #2d0f15 40%, #1B3A5F 100%);
+  padding-top: 72px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(196, 30, 58, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+.hero-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0;
+  animation: float-particle 6s infinite;
+}
+@keyframes float-particle {
+  0% { opacity: 0; transform: translateY(100vh) scale(0); }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.3; }
+  100% { opacity: 0; transform: translateY(-20vh) scale(1); }
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold);
+  padding: 0.4rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(5px);
+}
+.hero-product-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.15), 0 0 120px rgba(196, 30, 58, 0.1);
+  animation: hero-glow 4s ease-in-out infinite alternate;
+}
+@keyframes hero-glow {
+  0% { box-shadow: 0 0 60px rgba(212, 175, 55, 0.15), 0 0 120px rgba(196, 30, 58, 0.1); }
+  100% { box-shadow: 0 0 80px rgba(212, 175, 55, 0.25), 0 0 160px rgba(196, 30, 58, 0.15); }
+}
+.hero-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero h1 .gold { color: var(--gold); }
+.hero-subtitle {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+.hero-slogan {
+  font-size: 1rem;
+  color: var(--gold-light);
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(196, 30, 58, 0.4);
+}
+.btn-primary:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(196, 30, 58, 0.5);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+.btn-outline:hover {
+  background: rgba(212, 175, 55, 0.1);
+  transform: translateY(-2px);
+}
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  animation: bounce 2s infinite;
+}
+.hero-scroll-hint::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  margin: 0.5rem auto 0;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ========== About Section ========== */
+.about {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.about-image {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-image:hover img { transform: scale(1.03); }
+.about-image-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(196,30,58,0.3);
+}
+.about-text h3 {
+  font-size: 1.6rem;
+  color: var(--red);
+  margin-bottom: 1.2rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(93,64,55,0.1);
+}
+.about-stat-item {
+  text-align: center;
+}
+.about-stat-num {
+  font-family: "Noto Serif SC", serif;
+  font-size: 2rem;
+  color: var(--red);
+  font-weight: 700;
+  line-height: 1;
+}
+.about-stat-num span {
+  font-size: 0.9rem;
+  color: var(--gold);
+}
+.about-stat-label {
+  font-size: 0.8rem;
+  color: var(--brown-light);
+  margin-top: 0.3rem;
+}
+
+/* ========== Product Section ========== */
+.product {
+  padding: 6rem 0;
+  background: var(--white);
+}
+.product-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+.product-gallery {
+  position: relative;
+}
+.product-main-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+.product-main-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-main-img:hover img { transform: scale(1.02); }
+.product-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+.product-thumb {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  aspect-ratio: 1;
+}
+.product-thumb.active, .product-thumb:hover {
+  border-color: var(--red);
+  box-shadow: 0 4px 15px rgba(196,30,58,0.2);
+}
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-info {
+  padding: 1rem 0;
+}
+.product-info .product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(27, 58, 95, 0.08);
+  color: var(--navy);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.product-badge svg {
+  width: 16px;
+  height: 16px;
+}
+.product-info h2 {
+  font-size: 2rem;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.product-info .product-sub {
+  font-size: 1rem;
+  color: var(--brown-light);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(93,64,55,0.1);
+}
+.product-detail-list {
+  margin-bottom: 2rem;
+}
+.product-detail-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(93,64,55,0.06);
+  align-items: flex-start;
+}
+.product-detail-item .label {
+  flex-shrink: 0;
+  width: 100px;
+  font-weight: 600;
+  color: var(--brown);
+  font-size: 0.9rem;
+}
+.product-detail-item .value {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+  line-height: 1.8;
+}
+.product-highlight {
+  background: linear-gradient(135deg, rgba(196,30,58,0.05), rgba(212,175,55,0.05));
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.product-highlight h4 {
+  color: var(--red);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.product-highlight p {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+  line-height: 1.8;
+}
+.product-warning {
+  background: rgba(27, 58, 95, 0.05);
+  border-left: 3px solid var(--navy);
+  padding: 1rem 1.2rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.85rem;
+  color: var(--navy);
+  line-height: 1.8;
+}
+.product-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.product-feature-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--cream);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+.product-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  border-color: rgba(212,175,55,0.3);
+}
+.product-feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, var(--red), var(--red-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-feature-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--white);
+}
+.product-feature-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--brown);
+}
+.product-feature-card p {
+  font-size: 0.85rem;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+
+/* ========== Ingredients Section ========== */
+.ingredients {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+}
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.ingredient-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(93,64,55,0.06);
+}
+.ingredient-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border-color: rgba(212,175,55,0.3);
+}
+.ingredient-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, rgba(196,30,58,0.1), rgba(212,175,55,0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.ingredient-card h4 {
+  font-size: 1.05rem;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.ingredient-card p {
+  font-size: 0.85rem;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+
+/* ========== Certifications Section ========== */
+.certifications {
+  padding: 6rem 0;
+  background: var(--white);
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.cert-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--cream);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(93,64,55,0.06);
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.cert-card-img {
+  height: 250px;
+  overflow: hidden;
+}
+.cert-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+.cert-card:hover .cert-card-img img { transform: scale(1.05); }
+.cert-card-body {
+  padding: 1.2rem 1.5rem;
+}
+.cert-card-body h4 {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+}
+.cert-card-body p {
+  font-size: 0.85rem;
+  color: var(--brown-light);
+}
+.cert-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.cert-highlight-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--cream);
+  border-radius: 10px;
+}
+.cert-highlight-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.cert-highlight-item h4 {
+  font-size: 0.95rem;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+}
+.cert-highlight-item p {
+  font-size: 0.8rem;
+  color: var(--brown-light);
+}
+
+/* ========== Brand Story Section ========== */
+.brand-story {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+.story-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--red), var(--gold));
+}
+.story-item {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  align-items: center;
+}
+.story-item:nth-child(odd) { flex-direction: row; }
+.story-item:nth-child(even) { flex-direction: row-reverse; }
+.story-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--red);
+  border: 3px solid var(--cream);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 4px rgba(196,30,58,0.2);
+}
+.story-content {
+  width: calc(50% - 3rem);
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(93,64,55,0.06);
+  transition: all 0.3s;
+}
+.story-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+.story-content h4 {
+  font-size: 1.1rem;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+.story-content p {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+  line-height: 1.8;
+}
+.story-year {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.brand-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.brand-value-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(93,64,55,0.06);
+}
+.brand-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+.brand-value-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.2rem;
+  background: linear-gradient(135deg, rgba(196,30,58,0.08), rgba(212,175,55,0.08));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.brand-value-card h4 {
+  font-size: 1.1rem;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.brand-value-card p {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+  line-height: 1.7;
+}
+
+/* ========== Contact Section ========== */
+.contact {
+  padding: 6rem 0;
+  background: var(--white);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.contact-info {
+  padding: 1rem 0;
+}
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1.5rem;
+}
+.contact-info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+.contact-info-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background: rgba(196,30,58,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--red);
+}
+.contact-info-text h4 {
+  font-size: 0.95rem;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+}
+.contact-info-text p {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+.contact-map {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 200px;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(93,64,55,0.1);
+}
+.contact-map-placeholder {
+  text-align: center;
+  color: var(--brown-light);
+}
+.contact-map-placeholder svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+.contact-form-wrap {
+  background: var(--cream);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(93,64,55,0.06);
+}
+.contact-form-wrap h3 {
+  font-size: 1.3rem;
+  color: var(--brown);
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--brown);
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.form-group label .required {
+  color: var(--red);
+  margin-left: 2px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(93,64,55,0.15);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--brown);
+  background: var(--white);
+  transition: all 0.3s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(196,30,58,0.1);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-submit {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.form-submit:hover {
+  background: var(--red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(196,30,58,0.3);
+}
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+.form-success.show {
+  display: block;
+}
+.form-success svg {
+  width: 60px;
+  height: 60px;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+.form-success h4 {
+  font-size: 1.2rem;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.form-success p {
+  font-size: 0.9rem;
+  color: var(--brown-light);
+}
+
+/* ========== Footer ========== */
+.footer {
+  background: linear-gradient(135deg, #1a0a0a 0%, #2d1520 50%, #1B3A5F 100%);
+  color: rgba(255,255,255,0.7);
+  padding: 4rem 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-brand h3 {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+.footer-brand .footer-brand-en {
+  font-size: 0.8rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.footer-brand p {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.footer-disclaimer {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+.footer-col h4 {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+.footer-col a {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.7rem;
+  transition: all 0.3s;
+}
+.footer-col a:hover {
+  color: var(--gold);
+  padding-left: 4px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ========== Back to Top ========== */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(196,30,58,0.3);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+}
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ========== Animations ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== Lightbox ========== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1023px) {
+  .hero h1 { font-size: 2.5rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .product-showcase { grid-template-columns: 1fr; gap: 2rem; }
+  .ingredients-grid { grid-template-columns: repeat(2, 1fr); }
+  .cert-grid { grid-template-columns: repeat(2, 1fr); }
+  .cert-highlights { grid-template-columns: repeat(2, 1fr); }
+  .product-features { grid-template-columns: repeat(2, 1fr); }
+  .brand-values { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .story-timeline::before { left: 20px; }
+  .story-dot { left: 20px; }
+  .story-item, .story-item:nth-child(even) { flex-direction: row; padding-left: 50px; }
+  .story-content { width: 100%; }
+}
+@media (max-width: 767px) {
+  html { font-size: 15px; }
+  .nav-links { 
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: rgba(245, 241, 232, 0.98);
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  .nav-links.open { display: flex; }
+  .hamburger { display: flex; }
+  .hero h1 { font-size: 2rem; letter-spacing: 3px; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-product-img { width: 200px; height: 200px; }
+  .section-title h2 { font-size: 1.8rem; }
+  .ingredients-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .cert-grid { grid-template-columns: 1fr; }
+  .cert-highlights { grid-template-columns: repeat(2, 1fr); }
+  .product-features { grid-template-columns: 1fr; }
+  .product-thumbs { grid-template-columns: repeat(4, 1fr); }
+  .brand-values { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .container { padding: 0 1.2rem; }
+  .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== Header ========== -->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#home" class="nav-brand">
+      <div class="nav-brand-icon">和</div>
+      <div>
+        <div class="nav-brand-text">和元堂</div>
+        <div class="nav-brand-sub">HEYUANTANG</div>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">首页</a>
+      <a href="#product">产品中心</a>
+      <a href="#brand-story">品牌故事</a>
+      <a href="#certifications">资质荣誉</a>
+      <a href="#contact">联系我们</a>
+      <a href="#contact" class="nav-cta">立即咨询</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- ========== Hero Section ========== -->
+<section class="hero" id="home">
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">国食健字 G20041180</div>
+    <div class="hero-product-img">
+      <img src="images/product-front.jpg" alt="和元堂牌雅札更布饮液产品包装">
+    </div>
+    <h1>和元堂<span class="gold">®</span></h1>
+    <div class="hero-subtitle">雅札更布饮液 · 和元堂虫草王</div>
+    <p class="hero-slogan">传承千年养生智慧，守护当代健康生活</p>
+    <div class="hero-buttons">
+      <a href="#product" class="btn btn-primary">了解产品详情</a>
+      <a href="#contact" class="btn btn-outline">咨询健康方案</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">向下探索</div>
+</section>
+
+<!-- ========== About Section ========== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>关于和元堂</h2>
+      <p>ABOUT HEYUANTANG</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-image fade-in-left">
+        <img src="images/product-bottles.jpg" alt="和元堂虫草王产品展示">
+        <div class="about-image-badge">AAA 质量信用企业</div>
+      </div>
+      <div class="about-text fade-in-right">
+        <h3>传承中华养生智慧<br>融合现代生物科技</h3>
+        <p>广州和元堂生物科技发展有限公司，专注于虫草菌丝液保健食品的研发与推广。公司与中国中医科学院中医药科技合作中心联合研发，采用现代化生物工程深层发酵培养技术，以西藏那曲优质冬虫夏草为原料，精心打造出和元堂牌雅札更布饮液。</p>
+        <p>产品于2004年获得国家食品药品监督管理局批准（国食健字G20041180），具有增强免疫力的保健功能，是中国质量信用AAA企业认证产品。</p>
+        <div class="about-stats">
+          <div class="about-stat-item">
+            <div class="about-stat-num">20<span>+年</span></div>
+            <div class="about-stat-label">品牌历史</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-num">AAA</div>
+            <div class="about-stat-label">质量信用等级</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-num">188.8<span>倍</span></div>
+            <div class="about-stat-label">粗多糖超国标含量</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Product Section ========== -->
+<section class="product" id="product">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>产品中心</h2>
+      <p>PRODUCT CENTER</p>
+    </div>
+
+    <div class="product-showcase">
+      <div class="product-gallery fade-in-left">
+        <div class="product-main-img" id="productMainImg">
+          <img src="images/product-front.jpg" alt="和元堂牌雅札更布饮液">
+        </div>
+        <div class="product-thumbs">
+          <div class="product-thumb active" onclick="switchProductImg('images/product-front.jpg', this)">
+            <img src="images/product-front.jpg" alt="产品正面">
+          </div>
+          <div class="product-thumb" onclick="switchProductImg('images/product-bottles.jpg', this)">
+            <img src="images/product-bottles.jpg" alt="产品瓶装">
+          </div>
+          <div class="product-thumb" onclick="switchProductImg('images/product-box-open.jpg', this)">
+            <img src="images/product-box-open.jpg" alt="礼盒内衬">
+          </div>
+          <div class="product-thumb" onclick="switchProductImg('images/product-label-classic.jpg', this)">
+            <img src="images/product-label-classic.jpg" alt="经典包装">
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info fade-in-right">
+        <div class="product-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          国家批准保健食品 · 蓝帽子认证
+        </div>
+        <h2>和元堂牌雅札更布饮液</h2>
+        <div class="product-sub">和元堂虫草王 · 广谱免疫品 · 增强免疫力</div>
+
+        <div class="product-detail-list">
+          <div class="product-detail-item">
+            <div class="label">主要原料</div>
+            <div class="value">蝙蝠蛾拟青霉菌丝体、灵芝、香菇、山茱萸、玉竹、红枣、黄芪、蜂蜜</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">功效成分</div>
+            <div class="value">每100ml含：腺苷 0.95mg、粗多糖 1.8mg</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">保健功能</div>
+            <div class="value">增强免疫力</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">适宜人群</div>
+            <div class="value">免疫力低下者</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">不适宜人群</div>
+            <div class="value">少年儿童</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">食用方法</div>
+            <div class="value">每日2次，每次1瓶，睡前1小时或晨起空腹服用效果最佳</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">规格</div>
+            <div class="value">30ml/瓶，30ml×6瓶/盒</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">保质期</div>
+            <div class="value">24个月</div>
+          </div>
+          <div class="product-detail-item">
+            <div class="label">批准文号</div>
+            <div class="value" style="color: var(--navy); font-weight: 600;">国食健字 G20041180</div>
+          </div>
+        </div>
+
+        <div class="product-highlight">
+          <h4>核心功效成分解析</h4>
+          <p><strong>腺苷</strong> — 与磷酸根结合形成ATP，是人体能量利用和储存的中心物质，为机体提供充沛生命能量。<br>
+          <strong>粗多糖</strong> — 免疫调节大师，可显著增强机体免疫力，抑菌克病，为健康构筑坚实防线。</p>
+        </div>
+
+        <div class="product-warning">
+          <strong>温馨提示：</strong>保健食品不是药物，不能代替药物治疗疾病。本品有少量沉淀属正常现象，须摇匀后服用。请将本品置于儿童接触不到的地方。
+        </div>
+      </div>
+    </div>
+
+    <div class="product-features fade-in">
+      <div class="product-feature-card">
+        <div class="product-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>蓝帽子认证</h4>
+        <p>国食健字G20041180，国家食品药品监督管理局正规批准</p>
+      </div>
+      <div class="product-feature-card">
+        <div class="product-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h4>低温活性技术</h4>
+        <p>前沿低温活性分离技术，保留虫草多糖等活性精华成分</p>
+      </div>
+      <div class="product-feature-card">
+        <div class="product-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h4>超国标含量</h4>
+        <p>粗多糖含量达国标188.8倍，腺苷含量达国标14.2倍</p>
+      </div>
+      <div class="product-feature-card">
+        <div class="product-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>科研团队</h4>
+        <p>中国中医科学院专家团队联合研发，三易组方数年始成</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Ingredients Section ========== -->
+<section class="ingredients" id="ingredients">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>八大核心原料</h2>
+      <p>PREMIUM INGREDIENTS</p>
+    </div>
+    <div class="ingredients-grid">
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🍄</div>
+        <h4>虫草菌丝体</h4>
+        <p>选用西藏那曲优质冬虫夏草菌种，经生物工程发酵培殖，富含虫草多糖与腺苷</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🌿</div>
+        <h4>灵芝</h4>
+        <p>传统名贵中药材，含灵芝多糖与三萜类化合物，扶正固本，安神益气</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🍂</div>
+        <h4>香菇</h4>
+        <p>含丰富香菇多糖，有助于增强免疫功能，被誉为"菇中之王"</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🫐</div>
+        <h4>山茱萸</h4>
+        <p>味酸、涩，性微温，归肝、肾经，补益肝肾，收敛固脱</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🎋</div>
+        <h4>玉竹</h4>
+        <p>味甘，性微寒，归肺、胃经，养阴润燥，生津止渴</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🫘</div>
+        <h4>红枣</h4>
+        <p>补中益气，养血安神，药食两用的传统养生佳品</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🌾</div>
+        <h4>黄芪</h4>
+        <p>补气升阳，固表止汗，利水消肿，为"补气之长"</p>
+      </div>
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-icon">🍯</div>
+        <h4>蜂蜜</h4>
+        <p>补中润燥，调和诸药，使饮液口感醇厚、温和易吸收</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Brand Story Section ========== -->
+<section class="brand-story" id="brand-story">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>品牌故事</h2>
+      <p>BRAND STORY</p>
+    </div>
+
+    <div class="story-timeline">
+      <div class="story-item fade-in">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <span class="story-year">品牌起源</span>
+          <h4>冬虫夏草的千年传承</h4>
+          <p>雅札更布，是冬虫夏草的藏药名。自古松赞干布将虫草进贡中原，清代《药性考》赞其"秘精益气，专补命门"。和元堂以此为源，传承中华养生智慧。</p>
+        </div>
+      </div>
+      <div class="story-item fade-in">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <span class="story-year">科研攻关</span>
+          <h4>中国中医科学院联合研发</h4>
+          <p>和元堂与中国中医科学院中医药科技合作中心深度合作，专家团队三易组方，历经数年攻关，将传统虫草与现代生物科技完美融合。</p>
+        </div>
+      </div>
+      <div class="story-item fade-in">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <span class="story-year">2004年</span>
+          <h4>获得国家批准 · 蓝帽子认证</h4>
+          <p>和元堂牌雅札更布饮液正式获得国家食品药品监督管理局批准，批准文号为国食健字G20041180，保健功能为"增强免疫力"。</p>
+        </div>
+      </div>
+      <div class="story-item fade-in">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <span class="story-year">品质认可</span>
+          <h4>多项荣誉认证</h4>
+          <p>荣获AAA中国质量信用企业认证，成为世界华商500强俱乐部指定饮液，并获评全国推广项目，品质获得社会各界广泛认可。</p>
+        </div>
+      </div>
+      <div class="story-item fade-in">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <span class="story-year">持续发展</span>
+          <h4>现代生物科技赋能</h4>
+          <p>采用世界前沿的低温活性分离技术和生物工程常温发酵培殖工艺，确保虫草多糖等活性成分完整保留，让每一瓶雅液都蕴含充沛能量。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-values fade-in">
+      <div class="brand-value-card">
+        <div class="brand-value-icon">🏛️</div>
+        <h4>传承</h4>
+        <p>深植中华养生文化精髓，以冬虫夏草千年药用智慧为根基，古方今用，守正创新</p>
+      </div>
+      <div class="brand-value-card">
+        <div class="brand-value-icon">🔬</div>
+        <h4>科学</h4>
+        <p>融合现代生物工程技术，低温活性分离保留精华，与中国中医科学院联合研发</p>
+      </div>
+      <div class="brand-value-card">
+        <div class="brand-value-icon">🛡️</div>
+        <h4>品质</h4>
+        <p>国家批准蓝帽子保健食品，AAA质量信用企业，每一瓶均经严格质控，品质值得信赖</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Certifications Section ========== -->
+<section class="certifications" id="certifications">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>资质荣誉</h2>
+      <p>CERTIFICATIONS & HONORS</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card fade-in" onclick="openLightbox('images/cert-health-food.jpg')">
+        <div class="cert-card-img">
+          <img src="images/cert-health-food.jpg" alt="保健食品注册批件">
+        </div>
+        <div class="cert-card-body">
+          <h4>保健食品注册批件</h4>
+          <p>国食健字 G20041180 · 国家食品药品监督管理局批准</p>
+        </div>
+      </div>
+      <div class="cert-card fade-in" onclick="openLightbox('images/cert-trademark.jpg')">
+        <div class="cert-card-img">
+          <img src="images/cert-trademark.jpg" alt="商标注册证">
+        </div>
+        <div class="cert-card-body">
+          <h4>商标注册证</h4>
+          <p>第11292112号 · "和元堂"品牌商标正式注册</p>
+        </div>
+      </div>
+      <div class="cert-card fade-in" onclick="openLightbox('images/brochure.jpg')">
+        <div class="cert-card-img">
+          <img src="images/brochure.jpg" alt="品牌宣传资料">
+        </div>
+        <div class="cert-card-body">
+          <h4>品牌宣传册</h4>
+          <p>全国推广项目 · 世界华商500强俱乐部指定饮液</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-highlights fade-in">
+      <div class="cert-highlight-item">
+        <div class="cert-highlight-icon">🏅</div>
+        <h4>AAA质量信用</h4>
+        <p>中国质量信用企业认证</p>
+      </div>
+      <div class="cert-highlight-item">
+        <div class="cert-highlight-icon">🏆</div>
+        <h4>全国推广项目</h4>
+        <p>国家级健康产品推广</p>
+      </div>
+      <div class="cert-highlight-item">
+        <div class="cert-highlight-icon">🌏</div>
+        <h4>华商500强</h4>
+        <p>世界华商500强俱乐部指定饮液</p>
+      </div>
+      <div class="cert-highlight-item">
+        <div class="cert-highlight-icon">🔬</div>
+        <h4>权威研发</h4>
+        <p>中国中医科学院联合研发</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Contact Section ========== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>联系我们</h2>
+      <p>CONTACT US</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in-left">
+        <h3>企业信息</h3>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>企业名称</h4>
+            <p>广州和元堂生物科技发展有限公司</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>注册地址</h4>
+            <p>广东省广州市增城区荔城街罗岗明星村白湖岭（工业区）</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>联系电话</h4>
+            <p>020-82758209</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>官方网站</h4>
+            <p>http://www.gzheyuantang.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>受委托生产企业</h4>
+            <p>河北百消丹药业有限公司</p>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <div class="contact-map-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>广州市增城区荔城街罗岗明星村白湖岭</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-in-right">
+        <h3>在线留言</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>您的姓名 <span class="required">*</span></label>
+            <input type="text" name="name" placeholder="请输入您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label>联系电话 <span class="required">*</span></label>
+            <input type="tel" name="phone" placeholder="请输入您的联系电话" required pattern="[0-9\-\+]{7,15}">
+          </div>
+          <div class="form-group">
+            <label>咨询类型</label>
+            <select name="type">
+              <option value="product">产品咨询</option>
+              <option value="business">商务合作</option>
+              <option value="health">健康咨询</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>留言内容 <span class="required">*</span></label>
+            <textarea name="message" placeholder="请输入您的留言内容，我们将尽快回复" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">提交留言</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h4>提交成功！</h4>
+          <p>感谢您的留言，我们的客服人员将在1-2个工作日内与您联系。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>和元堂</h3>
+        <div class="footer-brand-en">HEYUANTANG · 广州和元堂生物科技发展有限公司</div>
+        <p>传承中华养生智慧，以现代科技萃取冬虫夏草精华，为追求健康品质生活的人群提供专业免疫调节解决方案。</p>
+        <div class="footer-disclaimer">
+          保健食品不是药物，不能代替药物治疗疾病。本品适宜免疫力低下者服用，少年儿童不宜。个体效果因人而异。
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <a href="#home">首页</a>
+        <a href="#product">产品中心</a>
+        <a href="#brand-story">品牌故事</a>
+        <a href="#certifications">资质荣誉</a>
+        <a href="#contact">联系我们</a>
+      </div>
+      <div class="footer-col">
+        <h4>产品信息</h4>
+        <a href="#product">产品详情</a>
+        <a href="#ingredients">核心原料</a>
+        <a href="#product">食用方法</a>
+        <a href="#certifications">批准文号</a>
+      </div>
+      <div class="footer-col">
+        <h4>联系方式</h4>
+        <a href="tel:02082758209">电话：020-82758209</a>
+        <a href="#contact">在线留言</a>
+        <a>地址：广州市增城区</a>
+        <a>荔城街罗岗明星村</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 广州和元堂生物科技发展有限公司 版权所有</span>
+      <span>国食健字 G20041180 · 粤ICP备XXXXXXXX号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightboxImg" src="" alt="放大查看">
+</div>
+
+<script>
+// ========== Mobile Menu ==========
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('active');
+}
+// Close menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+  });
+});
+
+// ========== Header Scroll Effect ==========
+const header = document.getElementById('header');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('scrolled');
+    backToTop.classList.add('show');
+  } else {
+    header.classList.remove('scrolled');
+    backToTop.classList.remove('show');
+  }
+  // Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    if (window.scrollY >= top) current = section.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+
+// ========== Scroll Animations ==========
+const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 100);
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
+
+// ========== Product Image Switcher ==========
+function switchProductImg(src, thumb) {
+  document.getElementById('productMainImg').querySelector('img').src = src;
+  document.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+// ========== Lightbox ==========
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+// ========== Hero Particles ==========
+(function() {
+  const container = document.getElementById('heroParticles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'hero-particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.animationDelay = Math.random() * 6 + 's';
+    p.style.animationDuration = (4 + Math.random() * 4) + 's';
+    p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+    container.appendChild(p);
+  }
+})();
+
+// ========== Form Handler ==========
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.style.display = 'none';
+  success.classList.add('show');
+}
+</script>
+
+</body>
+</html>
