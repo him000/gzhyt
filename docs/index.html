@@ -2528,6 +2528,24 @@ h1, h2, h3, h4 {
             <div class="factory-label">成品线</div>
           </div>
         </div>
+        <div class="carousel-slide">
+          <div class="factory-photo" onclick="openLightbox('images/factory-28-equip1.jpg')">
+            <img src="images/factory-28-equip1.jpg" alt="浓缩罐混合系统" loading="lazy">
+            <div class="factory-label">浓缩罐 · 混合系统</div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="factory-photo" onclick="openLightbox('images/factory-29-equip2.jpg')">
+            <img src="images/factory-29-equip2.jpg" alt="不锈钢反应釜组" loading="lazy">
+            <div class="factory-label">不锈钢反应釜组</div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="factory-photo" onclick="openLightbox('images/factory-30-equip3.jpg')">
+            <img src="images/factory-30-equip3.jpg" alt="发酵罐阵列" loading="lazy">
+            <div class="factory-label">发酵罐阵列</div>
+          </div>
+        </div>
           </div>
         </div>
         <button class="carousel-arrow carousel-prev" onclick="equipPrev()" aria-label="上一组">
@@ -2537,26 +2555,7 @@ h1, h2, h3, h4 {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
         <div class="carousel-dots">
-          <button class="carousel-dot active" onclick="goToEquipPage(0)" aria-label="第1页"></button><button class="carousel-dot" onclick="goToEquipPage(1)" aria-label="第2页"></button><button class="carousel-dot" onclick="goToEquipPage(2)" aria-label="第3页"></button><button class="carousel-dot" onclick="goToEquipPage(3)" aria-label="第4页"></button><button class="carousel-dot" onclick="goToEquipPage(4)" aria-label="第5页"></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 更多生产设备 -->
-    <div class="factory-category fade-in">
-      <div class="factory-category-title">
-        <h3>更多生产设备</h3>
-        <span>MORE EQUIPMENT</span>
-      </div>
-      <div class="factory-photos">
-        <div class="factory-photo wide" onclick="openLightbox('images/factory-28-equip1.jpg')">
-          <img src="images/factory-28-equip1.jpg" alt="浓缩罐与高剪切混合设备" loading="lazy"><div class="factory-label">浓缩罐 · 高剪切混合系统</div>
-        </div>
-        <div class="factory-photo" onclick="openLightbox('images/factory-29-equip2.jpg')">
-          <img src="images/factory-29-equip2.jpg" alt="不锈钢反应釜组" loading="lazy"><div class="factory-label">不锈钢反应釜组</div>
-        </div>
-        <div class="factory-photo" onclick="openLightbox('images/factory-30-equip3.jpg')">
-          <img src="images/factory-30-equip3.jpg" alt="发酵罐阵列" loading="lazy"><div class="factory-label">发酵罐阵列</div>
+          <button class="carousel-dot active" onclick="goToEquipPage(0)" aria-label="第1页"></button><button class="carousel-dot" onclick="goToEquipPage(1)" aria-label="第2页"></button><button class="carousel-dot" onclick="goToEquipPage(2)" aria-label="第3页"></button><button class="carousel-dot" onclick="goToEquipPage(3)" aria-label="第4页"></button><button class="carousel-dot" onclick="goToEquipPage(4)" aria-label="第5页"></button><button class="carousel-dot" onclick="goToEquipPage(5)" aria-label="第6页"></button>
         </div>
       </div>
     </div>
@@ -3115,7 +3114,7 @@ document.getElementById('footerYear').textContent = new Date().getFullYear();
 
 // ===== Equipment Carousel =====
 let equipPage = 0;
-const equipTotal = 5;
+const equipTotal = 6;
 function updateEquipCarousel() {
   const track = document.querySelector('#equipCarousel .carousel-track');
   if (!track) return;
